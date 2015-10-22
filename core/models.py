@@ -7,3 +7,5 @@ class Contact(models.Model):
   message = models.TextField(null=True, blank=True)
   created_at = models.DateTimeField(auto_now_add=True)
 
+  def __unicode__(self):
+      return self.name
